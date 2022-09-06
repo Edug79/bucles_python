@@ -24,11 +24,47 @@ Tener en cuenta que "range" no incluye el número de "fin" en su secuencia,
 sino que va hasta el anterior.
 '''
 
+from itertools import count
+
+
 print('Comenzamos a ponernos serios!')
+
 # Empezar aquí la resolución del ejercicio
 
 # inicio = ....
 # fin = ....
+
+inicio = int(input('Ingrese el primer número de la secuencia\n'))
+fin = int(input('Ingrese el último número de la secuencia\n'))
+
+lista_completa = []
+
+cantidad_de_numeros = 0
+
+for i in range(inicio , fin + 1 ):
+    lista_completa.append(i)
+    
+    cantidad_de_numeros = cantidad_de_numeros + 1
+    
+print(lista_completa)
+print("La cantidad de numeros en el listado es: " ,cantidad_de_numeros)
+
+sumatoria = 0
+
+numeros = range(inicio , fin)
+
+for numero in numeros:
+    sumatoria += numero
+    
+#print("sumatoria :" , sumatoria)
+
+sumatoria_final = sumatoria + fin
+
+print("La suma total del listado es: ",sumatoria_final)
+
+promedio = sumatoria_final / cantidad_de_numeros
+
+print("El promedio de los numeros ingresados es: " ,promedio)
 
 # cantidad_numeros ....
 # sumatoria ....

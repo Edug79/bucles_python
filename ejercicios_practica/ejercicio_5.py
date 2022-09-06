@@ -16,9 +16,28 @@
 # Tener en cuenta que "range" no incluye el número de "fin" en su secuencia,
 # sino que va hasta el anterior
 
+from pickletools import read_unicodestring1
+
+
 inicio = int(input('Ingrese el primer número de la secuencia\n'))
 fin = int(input('Ingrese el último número de la secuencia\n'))
 sumatoria = 0  # Inicializo el contador en 0
+
+numeros = range(inicio , fin)
+
+for numero in numeros:
+    sumatoria += numero
+    
+#print("sumatoria :" , sumatoria)
+
+sumatoria_final = sumatoria + fin
+
+print("La sumatoria final es:" , sumatoria_final )
+
+    
+     
+
+
 
 # for ... in range(....)
 

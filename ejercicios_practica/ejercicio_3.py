@@ -15,4 +15,17 @@
 numeros = [1, 5, -1, 6, 10, 2, -5]
 suma = 0   # Variable ya inicializada, la suma arranca en cero
 
+numeros_len = len(numeros)
+
+for i in range (numeros_len):
+    numeros_separados = numeros[i]
+    suma = numeros_separados + suma
+    
+    
+
+    print("La sumatoria acumulativa de la lista de numeros es: ", suma)
+
+    
+ 
+
 print("terminamos!, el resultado final almacenado en suma debe ser 18")

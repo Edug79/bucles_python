@@ -23,4 +23,20 @@ x = 0
 # En cada iteracion del bucle debe incrementar el valor de "x" en "2"
 # e imprimir en pantalla el resultado de X (antes de incrementar) con print
 
+while x < 10 and x != 6:
+    
+    print("El resultado de X: " , x )
+
+    x +=2
+
+
+
+while x < 10:
+    if x == 6:
+        break
+    
+    print("El resultado de X: " , x )
+
+    x +=2   
+
 print("terminamos!")

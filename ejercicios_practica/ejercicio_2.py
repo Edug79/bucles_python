@@ -12,6 +12,11 @@
 # Dado la siguiente lista de colores, utilizar "for"
 # para imprimir en pantalla todos los colores
 colores = ['rojo', 'naranja', 'verde', 'azul']
+colores_len = len(colores)
+
+for i in range(colores_len):
+        colores_separados = colores[i]
+        print("los colores son: " , colores_separados)
 
 # Itere el "for" utilizando la lista como parámero
 # y utilizar como elemento del "for" cada color
